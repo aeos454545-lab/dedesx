@@ -1,0 +1,4 @@
+# index.html'i ana dizine yönlendir
+RewriteEngine On
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^(.*?)index\.html$ /$1 [L,R=301,NC]
